@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: rebeccapurple;
 }
 body {
   margin: 0;
@@ -621,4 +622,24 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 10px;
+}
+
+header > * {
+  grid-column: 2/3;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 10px;
+}
+
+main > * {
+  grid-column: 2/3;
 }

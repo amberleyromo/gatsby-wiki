@@ -2,32 +2,27 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = () => (
-  <div
+  <header
     style={{
-      background: 'rebeccapurple',
+      background: 'white',
       marginBottom: '1.45rem',
     }}
   >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
+    <h1 style={{
+      marginTop: '2rem',
+      marginBottom: '1rem'
+    }}>
+      <Link to="/">
+        Not a Blog
+      </Link>
+    </h1>
+
+    <h2>Topical summaries for memory and processing</h2>
+
+    <p>I learn better when I have to think about something enough to reword it and write it down. I also often can't find "that thing I read". Basically an odd little growing database of things I Google.</p>
+
+    <p><em>This will be a search bar eventually. ATM just loop through and show whatever records exist here.</em></p>
+  </header>
 )
 
 export default Header
